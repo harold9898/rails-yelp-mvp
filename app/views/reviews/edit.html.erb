@@ -1,0 +1,9 @@
+<h1>Reviews#edit</h1>
+<p>Find me in app/views/reviews/edit.html.erb</p>
+
+
+<%= simple_form_for [@restaurant] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit "edit this rating", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Reviews#show</h1>
+<p>Find me in app/views/reviews/show.html.erb</p>
+
+<p>Find me in app/views/reviews/index.html.erb</p>
+
+<% @reviews.each do |review| %>
+<p><%= review.content "--" review.rating %> <%= link_to "edit a review", edit_review_path(review) </p>
+<%= link_to "edit a review", edit_review_path(review) %>
+<% end %>
+
+<%= link_to "add a review", new_restaurant_review_path %>
